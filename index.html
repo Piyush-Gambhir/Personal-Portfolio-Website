@@ -13,18 +13,35 @@
 </head>
 
 <body>
-    <!--------------------------- Header --------------------------->
-    <div id="header">
+
+    <!--------------------------- Navbar --------------------------->
+    <div id="navbar">
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li>
+                        <p class="navbar-links active-link" onclick="opensection('header')">Home</p>
+                    </li>
+                    <li>
+                        <p class="navbar-links" onclick="opensection('about')">About</p>
+                    </li>
+                    <li>
+                        <p class="navbar-links" onclick="opensection('projects')">Projects</p>
+                    </li>
                     <li><a href="assets\Piyush-Gambhir Resume.pdf">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <p class="navbar-links" onclick="opensection('contact')">Contact</p>
+                    </li>
+
                 </ul>
             </nav>
+        </div>
+    </div>
+
+
+    <!--------------------------- Header --------------------------->
+    <div id="header" class="website-contents active-section">
+        <div class="container">
             <div class="header">
                 <div class="header-text">
                     <p>Web Developer & AI Enthusiast</p>
@@ -36,17 +53,16 @@
 
 
     <!--------------------------- About --------------------------->
-    <div id="about">
+    <div id="about" class="website-contents">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
                     <h1>About Me</h1>
-                    <p>Motivated and hardworking computer science student with a passion for programming and a desire to
+                    <p>Motivated and hardworking computer science student with a passion for programming and a
+                        desire to
                         learn and grow in the field.</p>
                 </div>
                 <div class="about-col-2">
-                    
-
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
@@ -55,29 +71,38 @@
 
                     <div class="tab-contents active-content" id="skills">
                         <ul>
-                            <li><span>Programming Languages</span><br>Python, Java, C</li>
-                            <li><span>Development Skills</span><br>Web Development</li>
-                            <li><span>Artificial Intelligence</span><br>Machine Learning, Deep Learning, Data Science
-                            </li>
-                            <li><span>Version Control</span><br>Git-GitHub</li>
-                            <li><span>Course Work</span><br>Data Structures, Algorihtms, Computational Statistics,
-                                Computer Networks, DBMS, Cyber Security, Data Visualization</li>
+                            <li class="heading">Programming Languages</li>
+                            <li class="content">Python, Java | Also Familiar With C</li>
+                            <li class="heading">Development Skills</li>
+                            <li class="content">HTML, CSS, JavaScript, Bootstrap, ReactJS</li>
+                            <li class="heading">Artificial Intelligence</li>
+                            <li class="content">Machine Learning, Deep Learning, DataScience</li>
+                            <li class="heading">Version Control</li>
+                            <li class="content">Git-GitHub</li>
+                            <li class="heading">Course Work</li>
+                            <li class="content">Data Structures, Algorihtms, Statistics, Computer Networks, DBMS, Cyber
+                                Security, Data Visualization</li>
                         </ul>
                     </div>
-                    
+
                     <div class="tab-contents" id="education">
                         <ul>
                             <ul>
-                                <li><span>The NorthCap University</span><br>B.Tech in Computer Science<br>2021-2025</li>
-                                <li><span>St. Mary's School, Dwarka</span><br>CBSE Class XII<br>2021</li>
-                                <li><span>St. Mary's School, Dwarka</span><br>CBSE Class X<br>2019</li>
+                                <li class="heading">The NorthCap University<span>2021-2025</span></li>
+                                <li class="content">B.Tech in Computer Science<br>CGPA: 8.72 (Till 3rd Semester)</li>
+                                <li class="heading">St. Mary's School, Dwarka<span>2021</span></li>
+                                <li class="content">CBSE Class XII<br>Percentage: 88.0%</li>
+                                <li class="heading">St. Mary's School, Dwarka<span>2019</span></li>
+                                <li class="content">CBSE Class X<br>Percentage: 88.2%</li>
                             </ul>
                         </ul>
                     </div>
-                    
+
                     <div class="tab-contents" id="experience">
                         <ul>
-
+                            <ul>
+                                <li class="heading">No Experience</li>
+                            </ul>
                         </ul>
                     </div>
                 </div>
@@ -85,6 +110,19 @@
         </div>
     </div>
 
+    <!--------------------------- Projects --------------------------->
+    <div id="projects" class="website-contents">
+        <div class="container">
+
+        </div>
+    </div>
+
+    <!--------------------------- Contact --------------------------->
+    <div id="contact" class="website-contents">
+        <div class="container">
+
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

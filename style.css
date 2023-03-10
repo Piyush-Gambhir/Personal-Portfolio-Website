@@ -10,16 +10,22 @@ body {
   color: #fff;
 }
 
-#header {
-  width: 100%;
-  height: 100vh;
+.website-contents {
+  display: none;
 }
 
-.container {
-  padding: 10px 10%;
+.website-contents.active-section {
+  display: block;
 }
 
-.container nav {
+/* -------------- Navbar -------------- */
+
+#navbar .container {
+  padding: 15px 5%;
+  /* background-color: #ff004f; */
+}
+
+#navbar .container nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,21 +33,21 @@ body {
   justify-content: right;
 }
 
-.container nav ul li {
+#navbar .container nav ul li {
   list-style: none;
   display: inline-block;
   margin: 10px 20px;
 }
 
-.container nav ul li a {
+#navbar .container nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   position: relative;
 }
 
-.container nav ul li a::after {
+#navbar .container nav ul li a::after {
   content: "";
   width: 0;
   height: 3px;
@@ -52,73 +58,116 @@ body {
   transition: 0.5s;
 }
 
-.container nav ul li a:hover::after {
+#navbar .container nav ul li a:hover::after {
   width: 100%;
 }
 
-.header .header-text {
+#navbar .container nav ul li p {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+}
+
+#navbar .container nav ul li p::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+#navbar .container nav ul li p:hover::after {
+  width: 100%;
+}
+
+/* -------------- Header -------------- */
+#header {
+  width: 100%;
+  height: 100vh;
+}
+
+#header .container {
+  padding: 10px 10%;
+}
+
+#header .header .header-text {
   margin-top: 20%;
   font-size: 30px;
 }
 
-.header .header-text h1 {
+#header .header .header-text h1 {
   margin-top: 20px;
   font-size: 60px;
 }
 
-.header .header-text h1 span {
+#header .header .header-text h1 span {
   color: #ff004f;
   transition: all 0.3s ease-in-out;
 }
 
-.header .header-text h1 span:hover {
+#header .header .header-text h1 span:hover {
   color: #ff004f;
   font-size: 70px;
 }
 
-/* ---- About ---- */
+/* -------------- About -------------- */
 
 #about {
-  padding: 80px 0;
-  color: #ffffff;
+  width: 100%;
+  height: 100vh;
 }
 
-.row {
+#about .container {
+  padding: 7% 10%;
+}
+
+#about .row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 #about .row .about-col-1 {
-  flex-basis: 35%;
+  flex-basis: 50%;
+  padding: 20px 30px;
+  /* background-color: aqua; */
+
 }
 
 #about .row .about-col-1 h1 {
   font-size: 48px;
 }
 
-#about .row .about-col-2 {
-  flex-basis: 60%;
+#about .row .about-col-1 p {
+  font-size: 36px;
+  margin: 20px 0;
 }
 
 #about .row .about-col-2 {
-  font-size: 18px;
+  flex-basis: 50%;
+  padding: 10px 30px;
 }
 
-.tab-titles {
+#about .row .about-col-2 .tab-titles {
   display: flex;
-  margin: 20px 0 40px;
+  font-size: 18px;
+  justify-content: space-between;
 }
 
-.tab-titles .tab-links {
-  margin-right: 50px;
-  font-size: 18px;
+#about .tab-titles .tab-links {
+  font-size: 32px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
 }
 
-.tab-links::after {
+#about .tab-links::after {
   content: "";
   width: 0;
   height: 3px;
@@ -129,22 +178,36 @@ body {
   transition: 0.5s;
 }
 
-.tab-links.active-link::after {
+#about .tab-links.active-link::after {
   width: 100%;
 }
 
-.tab-contents {
+#about .tab-contents {
   display: none;
 }
 
-.tab-contents.active-content {
+#about .tab-contents.active-content {
   display: block;
-}
-.tab-contents ul li {
-  list-style: none;
-  margin: 15px 0;
+  padding: 20px 0px;
 }
 
-.tab-contents ul li span {
-  color: #ff004f;
+#about .tab-contents ul li{
+  list-style: none;
 }
+
+#about .tab-contents ul li.heading{
+  color: #ff004f;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#about .tab-contents ul li.content{
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
