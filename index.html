@@ -28,7 +28,9 @@
                     <li>
                         <p class="navbar-links" onclick="opensection('projects')">Projects</p>
                     </li>
-                    <li><a href="assets\Piyush-Gambhir Resume.pdf">Resume</a></li>
+                    <!-- <li><a href="assets\Piyush-Gambhir Resume.pdf">Resume</a></li> -->
+                    <li>
+                        <p class="navbar-links" onclick="opensection('resume')">Resume</p>
                     <li>
                         <p class="navbar-links" onclick="opensection('contact')">Contact</p>
                     </li>
@@ -89,11 +91,12 @@
                         <ul>
                             <ul>
                                 <li class="heading">The NorthCap University<span>2021-2025</span></li>
-                                <li class="content">B.Tech in Computer Science<br>CGPA: 8.72 (Till 3rd Semester)</li>
+                                <li class="content">B.Tech in Computer Science<br><u>CGPA:</u> 8.72 (Till 3rd Semester)
+                                </li>
                                 <li class="heading">St. Mary's School, Dwarka<span>2021</span></li>
-                                <li class="content">CBSE Class XII<br>Percentage: 88.0%</li>
+                                <li class="content">CBSE Class XII<br><u>Percentage</u>: 88.0%</li>
                                 <li class="heading">St. Mary's School, Dwarka<span>2019</span></li>
-                                <li class="content">CBSE Class X<br>Percentage: 88.2%</li>
+                                <li class="content">CBSE Class X<br><u>Percentage</u>: 88.2%</li>
                             </ul>
                         </ul>
                     </div>
@@ -114,13 +117,45 @@
     <div id="projects" class="website-contents">
         <div class="container">
 
+
         </div>
     </div>
+
+    <!--------------------------- Resume --------------------------->
+    <div id="resume" class="website-contents">
+        <div class="resume-container">
+            <iframe src="assets/Piyush-Gambhir Resume.pdf"></iframe>
+        </div>
+    </div>
+
 
     <!--------------------------- Contact --------------------------->
     <div id="contact" class="website-contents">
         <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p>developer.piyushgambhir@gmail.com</p>
+                    <p>+91 XXXXX XXXXX</p>
 
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/gambhirpiyush/"><img src="./assets/social-icons/linkedin.svg" alt=""></a>
+                        <a href="https://github.com/Piyush-Gambhir"><img src="./assets/social-icons/github.svg" alt=""></a>
+                        <a href="https://twitter.com/_piyushgambhir"><img src="./assets/social-icons/twitter.svg" alt=""></a>
+                        <a href="mailto:developer.piyushgambhir@gmail.com" ><img src="./assets/social-icons/email.svg" alt=""></a>
+                    
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 

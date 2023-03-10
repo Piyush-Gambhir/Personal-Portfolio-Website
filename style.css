@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #080808;
+  background-color: #181818;
   color: #fff;
 }
 
@@ -22,7 +22,6 @@ body {
 
 #navbar .container {
   padding: 15px 5%;
-  /* background-color: #ff004f; */
 }
 
 #navbar .container nav {
@@ -93,11 +92,11 @@ body {
 }
 
 #header .container {
-  padding: 10px 10%;
+  padding: 7% 10%;
 }
 
 #header .header .header-text {
-  margin-top: 20%;
+  margin-top: 10%;
   font-size: 30px;
 }
 
@@ -136,12 +135,11 @@ body {
 #about .row .about-col-1 {
   flex-basis: 50%;
   padding: 20px 30px;
-  /* background-color: aqua; */
-
 }
 
 #about .row .about-col-1 h1 {
   font-size: 48px;
+  
 }
 
 #about .row .about-col-1 p {
@@ -191,11 +189,11 @@ body {
   padding: 20px 0px;
 }
 
-#about .tab-contents ul li{
+#about .tab-contents ul li {
   list-style: none;
 }
 
-#about .tab-contents ul li.heading{
+#about .tab-contents ul li.heading {
   color: #ff004f;
   font-size: 24px;
   margin-top: 30px;
@@ -204,10 +202,145 @@ body {
   justify-content: space-between;
 }
 
-
-#about .tab-contents ul li.content{
+#about .tab-contents ul li.content {
   color: #ffffff;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
+/* -------------- Projects -------------- */
+
+#projects {
+  width: 100%;
+  height: 100vh;
+}
+
+#projects .container {
+  padding: 7% 10%;
+}
+
+/* -------------- Resume -------------- */
+
+#resume .resume-container {
+  position: relative;
+  padding-top: 20px;
+  height: calc(100vh - 20px);
+}
+
+#resume .resume-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+}
+
+/* -------------- Contact Me -------------- */
+
+#contact {
+  width: 100%;
+  height: 100vh;
+}
+
+#contact .container {
+  padding: 7% 10%;
+}
+
+#contact .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#contact .row .contact-left {
+  flex-basis: 50%;
+  padding: 20px 30px;
+}
+
+#contact .row .contact-left h1 {
+  font-size: 48px;
+}
+
+#contact .row .contact-left p {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+#contact .row .contact-left .social-links {
+  display: flex;
+  margin-top: 80px;
+
+}
+#contact .row .contact-left .social-links img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+#contact .row .contact-right {
+  flex-basis: 50%;
+  padding: 20px 30px;
+}
+
+.contact-right form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-right input[type="text"],
+.contact-right input[type="email"],
+.contact-right textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.contact-right textarea {
+  height: 150px;
+}
+
+.contact-right button[type="submit"] {
+  background-color: #ff004f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-right button[type="submit"]:hover {
+  background-color: #f380a4;
+}
+
+.contact-right input[type="text"]:focus,
+.contact-right input[type="email"]:focus,
+.contact-right textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+
+
+/* -------------- CSS For Small Screens -------------- */
+
+@media only screen and (max-width: 600px) {
+  #header .header .header-text {
+    margin-top: 50%;
+    font-size: 16px;
+  }
+
+  #header .header .header-text h1 {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  
