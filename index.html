@@ -18,7 +18,7 @@
     <div id="navbar">
         <div class="container">
             <nav>
-                <ul>
+                <ul id="side-menu">
                     <li>
                         <p class="navbar-links active-link" onclick="opensection('header')">Home</p>
                     </li>
@@ -28,14 +28,14 @@
                     <li>
                         <p class="navbar-links" onclick="opensection('projects')">Projects</p>
                     </li>
-                    <!-- <li><a href="assets\Piyush-Gambhir Resume.pdf">Resume</a></li> -->
                     <li>
                         <p class="navbar-links" onclick="opensection('resume')">Resume</p>
                     <li>
                         <p class="navbar-links" onclick="opensection('contact')">Contact</p>
                     </li>
-
+                    <img id = "close-menu-icon" src="/assets/close-icon.svg" alt="close-menu-icon" onclick="closemenu()">
                 </ul>
+                <img id = "open-menu-icon" src="/assets/menu-icon.svg" alt="open-menu-icon" onclick="openmenu()">
             </nav>
         </div>
     </div>
@@ -139,11 +139,15 @@
                     <p>+91 XXXXX XXXXX</p>
 
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/gambhirpiyush/"><img src="./assets/social-icons/linkedin.svg" alt=""></a>
-                        <a href="https://github.com/Piyush-Gambhir"><img src="./assets/social-icons/github.svg" alt=""></a>
-                        <a href="https://twitter.com/_piyushgambhir"><img src="./assets/social-icons/twitter.svg" alt=""></a>
-                        <a href="mailto:developer.piyushgambhir@gmail.com" ><img src="./assets/social-icons/email.svg" alt=""></a>
-                    
+                        <a href="https://www.linkedin.com/in/gambhirpiyush/"><img
+                                src="./assets/social-icons/linkedin.svg" alt=""></a>
+                        <a href="https://github.com/Piyush-Gambhir"><img src="./assets/social-icons/github.svg"
+                                alt=""></a>
+                        <a href="https://twitter.com/_piyushgambhir"><img src="./assets/social-icons/twitter.svg"
+                                alt=""></a>
+                        <a href="mailto:developer.piyushgambhir@gmail.com"><img src="./assets/social-icons/email.svg"
+                                alt=""></a>
+
                     </div>
                 </div>
 
